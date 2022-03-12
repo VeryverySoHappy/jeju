@@ -59,16 +59,16 @@
     </header>
 
     <div class="container" id="container">
-      <section class="sec1">
+      <section class="sec1" id="gnb">
         <article class="slide_wrap">
           <h3 class="skip">슬라이드메뉴</h3>
           <div class="slide_list">
             <ul>
-              <li class="on"><a href="#"><img src="../img/main/slide1.png" alt=""></a></li>
-              <li class="on"><a href="#"><img src="../img/main/slide3.png" alt=""></a></li>
-              <li class="on"><a href="#"><img src="../img/main/slide5.png" alt=""></a></li>
-              <li class="on"><a href="#"><img src="../img/main/slide2.png" alt=""></a></li>
-              <li class="on"><a href="#"><img src="../img/main/slide4.png" alt=""></a></li>
+              <li class="on"><a href="#"><img src="../img/main/slide_1.png" alt=""></a></li>
+              <li class="on"><a href="#"><img src="../img/main/slide_2.png" alt=""></a></li>
+              <li class="on"><a href="#"><img src="../img/main/slide_3.png" alt=""></a></li>
+              <li class="on"><a href="#"><img src="../img/main/slide_4.png" alt=""></a></li>
+              <li class="on"><a href="#"><img src="../img/main/slide_5.png" alt=""></a></li>
             </ul>
             <div class="btn_wrap">
               <div class="count_N">
@@ -84,35 +84,102 @@
           </div>
         </article>
         <article class="mayor_wrap">
-          <div>
-            <a href="#"><img src="" alt="조직도"><div>조직도</div></a>
-            <a href="#"><img src="" alt="직원검색"><div>직원검색</div></a>
+          <div class="mayor1">
+            <a href="#"><img src="../img/main/icon_1.png" alt="조직도"><strong>조직도</strong></a>
+            <a href="#"><img src="../img/main/icon_2.png" alt="직원검색"><strong>직원검색</strong></a>
           </div>
-          <div>
-            <a href="#"><img src="" alt="청사안내"><div>청사안내</div></a>
-            <a href="#"><img src="" alt="오시는길"><div>오시는길</div></a>
+          <div class="mayor2">
+            <a href="#"><img src="../img/main/icon_3.png" alt="청사안내"><strong>청사안내</strong></a>
+            <a href="#"><img src="../img/main/icon_4.png" alt="오시는길"><strong>오시는길</strong></a>
           </div>
         </article>
       </section>
 
-      <section>
+      <section class="sec2">
         <div class="shortcut_wrap">
           <div class="shortcut">
             <h2>주요서비스</h2>
-              <ul>
-                <li><a href="#">오시는길</a></li>/
-                <li><a href="#">민원상담</a></li>
-                <li><a href="#">부서안내</a></li>
-                <li><a href="#">포토갤러리</a></li>
-                <li><a href="#">뉴스레터</a></li> 
-                <li><a href="#">칭찬합시다</a></li>
-              </ul>
+              <a href="#">
+                <div class="short_img"><i class="fa-solid fa-pen-nib fa"></i></div>
+                <div class="short_txt">민원신청</div>
+              </a>
+              <a href="#">
+                <div class="short_img"><i class="fa-solid fa-user-tie fa"></i></div>
+                <div class="short_txt">민원상담</div>
+              </a>
+              <a href="#">
+                <div class="short_img"><i class="fa-solid fa-camera-retro fa"></i></div>
+                <div class="short_txt">부서안내</div>
+              </a>
+              <a href="#">
+                <div class="short_img"><i class="fa-solid fa-camera-retro fa"></i></div>
+                <div class="short_txt">포토갤러리</div>
+              </a>
+              <a href="#">
+                <div class="short_img"><i class="fa-solid fa-camera-retro fa"></i></div>
+                <div class="short_txt">뉴스레터</div>
+              </a>
+              <a href="#">
+                <div class="short_img"><i class="fa-solid fa-camera-retro fa"></i></div>
+                <div class="short_txt">칭찬합시다</div>
+              </a>
             </div>
           </div> 
         </section>
 
-        <section>
+        <section class="sec3">
           <!-- 텝메뉴 넣기 -->
+          <div class="notice_content">
+            <div class="notice_menu">
+              <input type="radio" name="noticemenu" id="not_1" checked>
+              <label for="not_1">새소식</label>
+              <input type="radio" name="noticemenu" id="not_2">
+              <label for="not_2">입법·고시·공고</label>
+              <input type="radio" name="noticemenu" id="not_3">
+              <label for="not_3">시험정보</label>
+            </div>
+          
+            <div class="notice not1">
+              <a href="#" class="not_li">
+                <div class="notL">
+                  <div>03.12</div>
+                  <div>2021</div>
+                </div>
+                <span class="notR">
+                  <div>일일 소방종합 상황보고</div>
+                  <div>일일 소방종합 상황보고</div>
+                </span>
+              </a>
+              <a href="#" class="not_li">
+                <div class="notL">
+                  <div>03.12</div>
+                  <div>2022</div>
+                </div>
+                <span class="notR">
+                  <div>기상상황</div>
+                  <div>기상상황</div>
+                </span>
+              </a>
+              <a href="" class="not_li">
+                <div class="notL">
+                  <div>03.10</div>
+                  <div>2022</div>
+                </div>
+                <span class="notR">
+                  <div>임신부 대상 신속항원검사키트 지원</div>
+                  <div>임신부 대상 신속항원검사키트 지원</div>
+                </span>
+              </a>
+            </div>
+            <div class="notice not2">
+              <div>1234546</div>
+            </div>
+            <div class="notice not3">
+            </div>
+          </div>
+        
+          <!-- 텝메뉴 넣기 -->
+          
           <div class="noticeImg">
             <div class="noticeList">
               <a href="#" class=""><img src="" alt=""></a>

@@ -46,3 +46,17 @@
   clear: both;
   width: 100%;
 }
+
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom:20px;
+}

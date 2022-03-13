@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.sec2 {
+  height: 256px;
+}
+
+.sec2 .shortcut_wrap .shortcut_wrap {
+  /* margin-top: 30px; */
+  height: 300px;
+  border: 1px solid #000;
+}
+
+.shortcut a {
+  float: left;
+  height: 215px;
+  margin-right: 43px;
+}
+
+.shortcut a:last-child {
+  margin-right: 0;
+}
+
+.shortcut .short_img {
+  position: relative;
+  border: 1px solid #eee;
+  /* width: 160px;
+  height: 160px; */
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgb(221, 221, 221);
+  overflow: hidden;
+}
+
+.short_img::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.short_img:hover:before {
+  height: 100%;
+}
+
+.short_img:nth-child(1)::before {
+  background-color: #ffd562;
+}
+
+.shortcut i {
+  position: relative;
+  font-size: 70px;
+  color: #373C4F;
+  transition: .5s;
+}
+
+.shortcut a:hover i {
+  transform: rotateY(360deg);
+  color: #fff;
+}
+
+.shortcut .short_txt {
+  text-align: center;
+  margin-top: 15px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}

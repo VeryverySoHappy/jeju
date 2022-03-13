@@ -21,12 +21,12 @@ function cycleMenu(){
       $(this).removeClass('pause');
       $(this).addClass('play');
     }else{
-      sid=setInterval(cycleMenuAutoPlay,2000)
+      sid=setInterval(cycleMenuAutoPlay,5000)
       $(this).removeClass('play');
       $(this).addClass('pause');
     }
   })
-  sid=setInterval(cycleMenuAutoPlay,2000)
+  sid=setInterval(cycleMenuAutoPlay,5000)
 }
 
 function changeItem(idx){

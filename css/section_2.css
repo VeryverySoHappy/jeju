@@ -1,70 +1,195 @@
 @charset "utf-8";
 
 .sec2 {
-  height: 256px;
+  height: 352px;
 }
 
-.sec2 .shortcut_wrap .shortcut_wrap {
-  /* margin-top: 30px; */
+.notice_content {
+  width: 800px;
   height: 300px;
-  border: 1px solid #000;
-}
-
-.shortcut a {
   float: left;
-  height: 215px;
-  margin-right: 43px;
-}
-
-.shortcut a:last-child {
-  margin-right: 0;
-}
-
-.shortcut .short_img {
-  position: relative;
+  border-radius: 30px;
   border: 1px solid #eee;
-  /* width: 160px;
-  height: 160px; */
-  padding: 30px;
-  border-radius: 40px;
-  box-shadow: 0 0 20px rgb(221, 221, 221);
-  overflow: hidden;
+  font-size:16px;
 }
 
-.short_img::before {
-  content: '';
+.notice_menu {
+  width: 800px;
+  height: 55px;
+  padding-top: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.more_notice {
+  display: inline-block;
+  /* border: 1px solid #000; */
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
   position: absolute;
-  width: 100%;
-  height: 0px;
-  bottom: 0;
-  left: 0;
+  top: 17px;
+  right: 15px;
   transition: 0.5s;
 }
 
-.short_img:hover:before {
-  height: 100%;
+.more_notice:hover {
+  font-size: 25px;
+  color:#ffd562;
 }
 
-.short_img:nth-child(1)::before {
-  background-color: #ffd562;
-}
-
-.shortcut i {
-  position: relative;
-  font-size: 70px;
-  color: #373C4F;
-  transition: .5s;
-}
-
-.shortcut a:hover i {
-  transform: rotateY(360deg);
-  color: #fff;
-}
-
-.shortcut .short_txt {
+input[type="radio"] {display:none;}
+input[type="radio"] + label {
+  display:inline-block;
+  line-height: 55px;
+  margin-left: 15px;
+  padding: 0 15px;
   text-align: center;
-  margin-top: 15px;
-  padding: 5px;
-  font-size: 16px;
+  color: #666;
+  position: relative;
+  cursor:pointer;
+}
+
+input[type="radio"] + label:before {
+  content: '';
+  background-color: #ffd562;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+input[type="radio"]:checked + label{
   font-weight: bold;
+  color: #373C4F;
+}
+
+input[type="radio"]:checked + label:before {
+  width: 100%;
+}
+
+.notice {
+  width: 800px;
+  height: 200px;
+  display: none;
+}
+
+input[id="not_1"]:checked ~ .not1 {display:block;}
+input[id="not_2"]:checked ~ .not2 {display:block;}
+input[id="not_3"]:checked ~ .not3 {display:block;}
+
+.notice ul {
+  padding-left: 32px;
+}
+
+.notice li {
+  position: relative;
+}
+
+.notice li a {
+  padding: 8px 0px ;
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+}
+
+.notice li a:hover {
+  text-decoration: underline;
+}
+
+.notice li a:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  margin-right: 15px;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+  text-align: center;
+  line-height: 24px;
+  display: inline-block;
+}
+
+.noticeImg {
+  float: right;
+  border: 1px solid #eee;
+  width: 360px;
+  height: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.noticeList {
+  position: relative;
+  width: 260px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.noticeList .imageType {
+  position: absolute;
+  width: 260px;
+  height: 300px;
+}
+
+.noticeList img {
+  width: 260px;
+  height: 300px;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  transform: rotate(90deg);
+}
+
+.control * {
+  vertical-align: middle;
+}
+
+.move {
+  margin-right: 20px;
+  float: left;
+}
+.move a {
+  background: url(../img/main/bg_btn_page02_140716.png) no-repeat -13px -189px;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  text-indent: -999em;
+  display: inline-block;
+}
+
+.move a.on {
+  background: url(../img/main/bg_btn_page02_140716.png) no-repeat -1px -189px;
+}
+
+.pause {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: url(../img/main/bg_btn_page02_140716.png) no-repeat 0 -171px;
+}
+.pause span {
+  display: inline-block;
+  text-indent: -999em;
+}
+
+.play {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: url(../img/main/bg_btn_page02_140716.png) no-repeat 0 -155px;
+}
+
+.play span {
+  display: inline-block;
+  text-indent: -999em;
 }

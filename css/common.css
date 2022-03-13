@@ -30,7 +30,7 @@
   display: block;
   background-color: #333;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -53,10 +53,4 @@
 .sec4 {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid #000;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom:20px;
 }

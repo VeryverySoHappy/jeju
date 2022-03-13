@@ -10,14 +10,17 @@
   float: left;
   border-radius: 30px;
   border: 1px solid #eee;
+  border-top: none;
   font-size:16px;
 }
 
 .notice_menu {
-  width: 800px;
+  width: 796px;
   height: 55px;
   padding-top: 15px;
+  border-radius: 30px 30px 0 0 ;
   font-size: 18px;
+  border: 3px solid #ffd562;
   border-bottom: 1px solid #ccc;
   position: relative;
 }
@@ -38,7 +41,6 @@
 
 .more_notice:hover {
   font-size: 25px;
-  color:#ffd562;
 }
 
 input[type="radio"] {display:none;}
@@ -55,12 +57,12 @@ input[type="radio"] + label {
 
 input[type="radio"] + label:before {
   content: '';
-  background-color: #ffd562;
+  background-color: #373C4F;
   width: 0;
-  height: 3px;
+  height: 4px;
   position: absolute;
   left: 50%;
-  bottom: -2px;
+  bottom: -4px;
   transform: translateX(-50%);
   transition: 0.5s;
 }

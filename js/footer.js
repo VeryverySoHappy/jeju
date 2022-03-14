@@ -6,7 +6,7 @@ function changeItem(num){
     $('.page_navi li').eq(num).addClass('on')
 
     $('.slide').animate({
-      top:-(num * 196) + 'px'
+      top:-(num * 60) + 'px'
     },3000,'easeOutBack');
   }
 }
@@ -26,7 +26,6 @@ $(document).ready(function(){
     changeItem(selectNum)
   })
   
-
   $('.prev').on('click', function(e){
     e.preventDefault()
     selectNum--

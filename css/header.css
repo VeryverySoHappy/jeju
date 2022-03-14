@@ -25,6 +25,7 @@
   float: left;
   width: 360px;
   height: 40px;
+  
 }
 
 .sub_menu .subL li {
@@ -44,12 +45,59 @@
 
 .navi .sub_menu .subR {
   float: right;
-  height: 40px;
+  position: relative;
+  width: 200px;
 }
 
 .sub_menu .subR li {
   float: right;
   margin-left: 30px;
+}
+
+.lang_wrap {
+  width: 130px;
+  position: absolute;
+  right: 52px;
+  top: 50%;
+  z-index: 2;
+}
+
+.lang_wrap .lang_btn {
+  width: inherit;
+  font-size: 14px;
+  background-color:transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.lang_wrap .lang_btn i {
+  margin-left: 5px;
+}
+
+.lang_wrap .lang_sub {
+  display: none;
+  width: inherit;
+  margin-top: 7px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.lang_wrap .lang_sub a {
+  display: block;
+  padding: 7px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+
+.lang_sub a:hover {
+  background: #f5f5f5;
+}
+
+.lang_wrap:hover .lang_sub {
+  display: block;
 }
 
 .logoSearch {
@@ -63,7 +111,6 @@
   float: left;
   width: 270px;
   height: 95px;
-  border: 1px solid #000;
   margin-top: 15px;
 }
 

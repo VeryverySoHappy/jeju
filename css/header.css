@@ -23,11 +23,12 @@
 
 .navi .sub_menu .subL {
   float: left;
-  width: 360px;
+  /* width: 360px; */
   height: 40px;
-  
 }
-
+.sub_menu .subL ul {
+  padding: 0;
+}
 .sub_menu .subL li {
   float: left;
   margin-right: 30px;
@@ -107,11 +108,13 @@
   margin: 0 auto;
 }
 
-.logoSearch .h1_logo {
-  float: left;
-  width: 270px;
-  height: 95px;
-  margin-top: 15px;
+.logoSearch .h1_logo img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 190px;
+  height: 23px;
 }
 
 .logoSearch .site_search {
@@ -145,29 +148,109 @@
   text-indent: -999px;
 }
 
-.menu {
+/* 메뉴부분 시작 */
+#gnb {
+  /* position: absolute;
+  top: 165px;
+  left: 0; */
+  position: relative;
   width: 100%;
-  height: 47px;
+  margin: 0 auto;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #595959;
-  margin-bottom: 30px;
   box-shadow: rgb(221, 221, 221) 0px 5px 5px 0px ;
+  z-index: 99;
+  background-color: #fff;
+  padding: 25px 0;
+  margin-bottom: 50px;
 }
 
-.menu .menu_wrap {
+#gnb .gnbList {
   width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+#gnb .gnbList:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+#gnb .gnbList > li > a {
+  display: block;
+  float: left;
+  width: 200px;
   height: 47px;
+  line-height: 47px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+#gnb .gnbList > li > .gnb2_bg {
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 47px;
+  width: 100%;
+  height: 250px;
+  z-index: 999;
+}
+
+#gnb .gnbList > li .gnb2 {
+  padding: 10px 0;
+  position: relative;
+  width: 1100px;
   margin: 0 auto;
 }
 
-.menu_wrap li {
+#gnb .gnbList>li .gnb2>ul {
   float: left;
-  width: 180px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
+  padding-top: 30px;
+  overflow: hidden;
+  padding-left: 12px;
+  padding-right: 0;
 }
 
-.menu_wrap li a {
+.gnb2 > ul > li {
+  float: left;
+  width: 180px;
+  line-height: 35px;
+}
+
+#gnb .gnbList > li .gnb2 > ul > li > a {
+  display: block;
+  padding: 3px 15px 3px 2px;
+  font-size: 17px;
+  font-weight: bold;
   color: #333;
 }
+
+#gnb .gnbList > li > a:hover {
+  color: #0081a6;
+  display: block;
+}
+
+.gnb2 > ul {
+  width: 1200px;
+}
+
+.gnb2 > ul > li {
+  width: 300px;
+  height: 230px;
+  margin-right: 65px;
+  font-size: 16px;
+}
+.gnb2 > ul > li > a {
+  border-bottom: 1px solid #cccccc;
+}
+
+.gnb2_ul {
+  padding: 0;
+  margin-top: 10px;
+}
+/* 메뉴부분 끝 */

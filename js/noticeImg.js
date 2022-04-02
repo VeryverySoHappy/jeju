@@ -5,7 +5,6 @@ function cycleMenu(){
     e.preventDefault();
 
     if($(this).hasClass('on')==false){
-      // on이라는 클래스가 없다면
       if($('.stopBtn').hasClass('pause')==true){
         clearInterval(sid);
         sid=setInterval(cycleMenuAutoPlay,5000)

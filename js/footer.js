@@ -1,37 +1,59 @@
-var selectNum=0;
-function changeItem(num){
-  if($('.slide').is(':animated')==false){
-
-    $('.page_navi li.on').removeClass('on')
-    $('.page_navi li').eq(num).addClass('on')
-
-    $('.slide').animate({
-      top:-(num * 60) + 'px'
-    },3000,'easeOutBack');
+var bannerWidth=120;
+var sid;
+function auto (dis){
+  if(dis=='prev'){
+    $('.banner').prepend($('.banner li:last'));
+    $('.banner').css('left','-'+bannerWidth+'px');
+    $('.banner').animate({
+      left:0
+    },3000)
+  }else{
+    $('.banner').animate({
+      left:'-'+bannerWidth+'px'
+    },3000,function(){
+      $('.banner').append($('.banner li:first'));
+      $('.banner').css('left','0px');
+    })
   }
 }
-$(document).ready(function(){
-  $('.page_navi li').on('click', function(e){
-    e.preventDefault()        
-    selectNum=$(this).index()
-    changeItem(selectNum)
+
+function cycleMenu(){
+  $('.prevBtn').on('click',function(e){
+    e.preventDefault();
+    clearInterval(sid);
+    sid=setInterval(auto,3000,'prev')
+    if($('.playBtn').hasClass('on')==true){
+      $('.playBtn').css('display','none');
+      $('.stopBtn').css('display','inline-block')
+    }
   })
 
-  $('.next').on('click', function(e){
-    e.preventDefault()
-    selectNum++
-    if(selectNum>$('.page_navi li').length-1){
-      selectNum=0;
+  $('.nextBtn').on('click', function(e){
+    e.preventDefault();
+    clearInterval(sid);
+    sid=setInterval(auto,3000,'next')
+    if($('.playBtn').hasClass('on')==true){
+      $('.playBtn').css('display','none');
+      $('.stopBtn').css('display','inline-block')
     }
-    changeItem(selectNum)
   })
-  
-  $('.prev').on('click', function(e){
-    e.preventDefault()
-    selectNum--
-    if(selectNum<0) {
-      selectNum=$('.page_navi li').length-1
-    }
-    changeItem(selectNum)
+  $('.playBtn').on('click', function(e){
+    e.preventDefault();
+    clearInterval(sid);
+    sid=setInterval(auto,3000,'next');
+    $(this).css('display','none');
+    $('.stopBtn').css('display','inline-block')
   })
+  $('.stopBtn').on('click', function(e){
+    e.preventDefault();
+    clearInterval(sid);
+    $(this).css('display','none');
+    $('.playBtn').css('display','inline-block')
+    $('.playBtn').addClass('on')
+  })
+
+  sid=setInterval(auto,1000,'next')
+}
+$(document).ready(function(){
+  cycleMenu();
 })

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main</title>
+  <title>FAQ</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
   <link rel="stylesheet" type="text/css" href="../css/reset.css">
   <link rel="stylesheet" type="text/css" href="../css/common.css">
   <link rel="stylesheet" type="text/css" href="../css/header.css">
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+  <link rel="stylesheet" type="text/css" href="../css/faq.css">
   <link rel="stylesheet" type="text/css" href="../css/footer.css">
 </head>
+
 <body>
   <div id="skipMenu">
     <a href="#container">본문바로가기</a>
@@ -29,7 +32,7 @@
               <li><a href="#">서귀포시</a></li>
             </ul>
           </div>
-          <div  class="subR">
+          <div class="subR">
             <ul>
               <li><a href="#">로그인</a></li>
               <li class="lang_wrap">
@@ -45,11 +48,12 @@
         </nav>
       </div>
       <div class="logoSearch">
-        <h1 class="h1_logo"><a href="#"><img src="../img/logo/제주도로고.svg" alt="제주도 로고" width="250px" height="50px"></a></h1>
+        <h1 class="h1_logo"><a href="#"><img src="../img/logo/제주도로고.svg" alt="제주도 로고" width="250px" height="50px"></a>
+        </h1>
         <div class="site_search">
           <form method="post" name="searchfrm" class="search">
             <input type="text" class="input_val" name="inval" placeholder="  검색어 입력" />
-            <input type="submit" value="검색"/>
+            <input type="submit" value="검색" />
           </form>
         </div>
       </div>
@@ -61,14 +65,17 @@
           <div class="gnb_wrap">
             <ul class="gnbList">
               <!-- 1단 메뉴 -->
+              <!-- main_menu -->
               <li class="first">
                 <a href="#">도정뉴스</a>
                 <!-- 2단 메뉴 -->
+                <!-- depth2 -->
                 <div class="gnb2_bg on">
                   <div class="gnb2">
                     <ul>
                       <li><a href="#">생생제주</a>
                         <!-- 3단 메뉴 -->
+                        <!-- depth3 -->
                         <ul class="gnb2_ul">
                           <li><a href="#">영상뉴스</a></li>
                           <li><a href="#">카드뉴스</a></li>
@@ -76,6 +83,7 @@
                           <li><a href="#">행복한 제주이야기</a></li>
                         </ul>
                         <!-- // 3단 메뉴 -->
+                        <!-- // depth3 -->
                       </li>
                       <li><a href="#">도정소식</a>
                         <ul class="gnb2_ul">
@@ -113,6 +121,7 @@
                   </div>
                 </div>
                 <!-- // 2단 메뉴 -->
+                <!-- // depth2 -->
               </li>
               <li><a href="#">신문고</a>
                 <div class="gnb2_bg">
@@ -374,294 +383,182 @@
       <!-- 메뉴 끝 -->
     </header>
 
-    <div class="container" id="container">
-      <section class="sec1">
-        <div class="sec1_wrap">
-          <article class="slide_wrap">
-            <h3 class="skip">슬라이드메뉴</h3>
-            <div class="slide_list">
-              <ul>
-                <li class="on"><a href="#"><img src="../img/main/slide_4.png" alt=""></a></li>
-                <li class="on"><a href="#"><img src="../img/main/slide_2.png" alt=""></a></li>
-                <li class="on"><a href="#"><img src="../img/main/slide_1.png" alt=""></a></li>
-                <li class="on"><a href="#"><img src="../img/main/slide_3.png" alt=""></a></li>
-                <li class="on"><a href="#"><img src="../img/main/slide_5.png" alt=""></a></li>
-              </ul>
-              <div class="btn_wrap">
-                <div class="count_N">
-                  <span class="count">1</span><span class="slide_total"> / 5</span>
-                </div>
-                <div class="slide_control">
-                  <a href="#" class="btn_left"><span>알림판이전보기</span></a>
-                  <a href="#" class="btn_stop pause"><span>알림판정지</span></a>
-                  <a href="#" class="btn_right"><span>알림판다음보기</span></a>
-                  <a href="#" class="btn_all"><span>알림판전체보기</span></a>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="mayor_wrap">
-            <div class="mayor1">
-              <a href="#"><img src="../img/main/icon_1.png" alt="조직도"><strong>조직도</strong></a>
-              <a href="#"><img src="../img/main/icon_2.png" alt="직원검색"><strong>직원검색</strong></a>
-            </div>
-            <div class="mayor2">
-              <a href="#"><img src="../img/main/icon_3.png" alt="청사안내"><strong>청사안내</strong></a>
-              <a href="#"><img src="../img/main/icon_4.png" alt="오시는길"><strong>오시는길</strong></a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="sec2">
-        <div class="sec2_wrap">
-          <div class="notice_content">
-            <div class="notice_menu">
-              <input type="radio" name="noticemenu" id="not_1" checked>
-              <label for="not_1">새소식</label>
-              <input type="radio" name="noticemenu" id="not_2">
-              <label for="not_2">입법·고시·공고</label>
-              <input type="radio" name="noticemenu" id="not_3">
-              <label for="not_3">시험정보</label>
-          
-              <a href="#"  class="more_notice">
-                <i class="fa-thin fa-plus fa"></i>
-                <span class="skip">공지사항 더보기</span>
-              </a>
-          
-              <div class="notice not1">
-                <ul>
-                  <li><a href="#">2022.03.13(일) 기상전망<span>2022-03-13</span></a></li>
-                  <li><a href="#">일일 소방종합 상황보고<span>2022-03-12</span></a></li>
-                  <li><a href="#">기상상황<span>2022-03-12</span></a></li>
-                  <li><a href="#">(보도자료) 임신부 대상 신속항원검사키트 지원<span>2022-03-11</span></a></li>
-                  <li><a href="#">3월2주차 건축계획심의 심의결과 알림<span>2022-03-10</span></a></li>
-                </ul>
-              </div>
-              <div class="notice not2">
-                <ul>
-                  <li><a href="#">2022년 감귤아열대연구과 기간제근로자 채용<span>2022-03-12</span></a></li>
-                  <li><a href="#">지역특화작목 기술개발사업 연구과제 공모<spann>2022-03-11</spann></a></li>
-                  <li><a href="#">2022년 사회적경제·가치 인식제고 교육지원 보조금 지원계획<spann>2022-03-11</spann></a></li>
-                  <li><a href="#">제403회 제주특별자치도의회 임시회 제출안건공고<spann>2022-03-11</spann></a></li>
-                  <li><a href="#">사립 박물관 등록 공고<spann>2022-03-11</spann></a></li>
-                </ul>
-              </div>
-              <div class="notice not3">
-                <ul>
-                  <li><a href="#">2022년도 제주특별자치도 청원경찰 공개경쟁 임용시험<span>2022-03-11</span></a></li>
-                  <li><a href="#">2022년도 지역인제(8,9급)선발시험 시행계획 공고<spann>2022-03-11</spann></a></li>
-                  <li><a href="#">2022년도 제주특별자치도 지방공무원 임용시험 시행계획<spann>2022-01-27</spann></a></li>
-                  <li><a href="#">2022년도 제주특별자치도 청원경찰 공개경쟁 임용시험 계획<spann>2022-01-27</spann></a></li>
-                  <li><a href="#">2022년도 제주특별자치도의회사무처 청원경찰 임용 필기시험<spann>2022-01-19</spann></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="noticeImg">
-            <div class="noticeList">
-              <a href="#" class="imageType on"><img src="../img/main/notice_1.png" alt="코로나19 극복을 위한 치유식물나눔행사"></a>
-              <a href="#" class="imageType"><img src="../img/main/notice_2.png" alt="탐나는전이란?"></a>
-              <a href="#" class="imageType"><img src="../img/main/notice_3.png" alt="소기업,소상공인 방역물품지원금 신청하기"></a>
-              <a href="#" class="imageType"><img src="../img/main/notice_4.png" alt="2022년 민생규제 혁신과제 공모"></a>
-              <a href="#" class="imageType"><img src="../img/main/notice_5.png" alt="2022년 2월 11일부터는 이렇게 달라져요!"></a>
-            </div>
-            <div class="notice_control">
-              <div class="move">
-                <a href="#" class="on">1번째 이벤트 보기</a>
-                <a href="#">2번째 이벤트 보기</a>
-                <a href="#">3번째 이벤트 보기</a>
-                <a href="#">4번째 이벤트 보기</a>
-                <a href="#">5번째 이벤트 보기</a>
-              </div>
-              <a href="#" class="stopBtn pause"><span>일시정지</span></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="sec3">
-        <div class="shortcut_wrap">
-          <div class="shortcut">
-            <a href="#">
-              <div class="short"><i class="fa-solid fa-pen-nib fa"></i></div>
-              <div class="short_txt">민원신청</div>
-            </a>
-            <a href="#">
-              <div class="short"><i class="fa-solid fa-user-tie fa"></i></div>
-              <div class="short_txt">민원상담</div>
-            </a>
-            <a href="#">
-              <div class="short"><i class="fa-solid fa-car-side fa"></i></div>
-              <div class="short_txt">주정차조회</div>
-            </a>
-            <a href="#">
-              <div class="short"><i class="fa-solid fa-building fa"></i></div>
-              <div class="short_txt">부서안내</div>
-            </a>
-            <a href="#">
-              <div class="short"><i class="fa-solid fa-camera-retro fa"></i></div>
-              <div class="short_txt">포토갤러리</div>
-            </a>
-            <a href="#">
-              <div class="short"><i class="fa-solid fa-newspaper fa"></i></div>
-              <div class="short_txt">뉴스레터</div>
-            </a>
-            <a href="#">
-              <div class="short"><i class="fa-solid fa-book fa"></i></div>
-              <div class="short_txt">교육포털</div>
-            </a>
-            <a href="#">
-              <div class="short"><i class="fa-solid fa-heart fa"></i></div>
-              <div class="short_txt">칭찬합시다</div>
-            </a>
-          </div>
-        </div> 
-      </section>
-
-      <section class="sec4">
-        <img src="../img/main/stone_bg.jpg" alt="배경이미지" class="ston_bg">
-        <div class="sec4_wrap">
-          <div class="info_wrap">
-            <h2 class="sec4_h2">분야별 맞춤 정보</h2>
-            <div class="info">
-              <h3>도민</h3>
-              <ul>
-                <li><a href="#">물가정보</a></li>
-                <li><a href="#">예산정보</a></li>
-                <li><a href="#">민원안내</a></li>
-                <li><a href="#">공간포털</a></li>
-                <li><a href="#">평생교육정보</a></li>
-                <li><a href="#">제주혁신도시</a></li>
-              </ul>
-            </div>
-            <div class="info">
-              <h3>관광객</h3>
-              <ul>
-                <li><a href="#">관광지</a></li>
-                <li><a href="#">음식점</a></li>
-                <li><a href="#">쇼핑</a></li>
-                <li><a href="#">숙박</a></li>
-                <li><a href="#">제주여행추천</a></li>
-                <li><a href="#">세계자연유산센터</a></li>
-              </ul>
-            </div>
-            <div class="info">
-              <h3>기업인</h3>
-              <ul>
-                <li><a href="#">일자리 종합정보</a></li>
-                <li><a href="#">경제정보</a></li>
-                <li><a href="#">경제통상진흥원</a></li>
-                <li><a href="#">사회적기업</a></li>
-                <li><a href="#">공공데이터</a></li>
-                <li><a href="#">계약정보공개</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="major">
+    <div class="faq_wrap">
+      <!-- 아코디언 메뉴 시작 -->
+      <div class="accordion_wrap">
+        <h3 class="acco_h3">소통/참여/인권</h3>
+        <dl class="sub_left_navi">
+          <dt class="acco_title on">자주 묻는 질문(FAQ)</dt>
+          <dd class="acco_sub">
             <ul>
-              <li>
-                <a href="#">
-                  <img src="../img/main/major_1.png" alt="복지">
-                  <div>복지</div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/main/major_2.png" alt="문화/역사">
-                  <div>문화/역사</div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/main/major_3.png" alt="교통">
-                  <div>교통</div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/main/major_4.png" alt="보건">
-                  <div>보건</div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/main/major_5.png" alt="심야약국/응급의료기관">
-                  <div>심야약국</div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/main/major_6.png" alt="관광">
-                  <div>관광</div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/main/major_7.png" alt="축제정보">
-                  <div>축제정보</div>
-                </a>
-              </li>
+              <li class="acco_li"><a href="#">자주 묻는 질문(FAQ)</a></li>
             </ul>
-          </div>
+          </dd>
+          <dt class="acco_title">종합민원안내</dt>
+          <dd class="acco_sub">
+            <ul>
+              <li class="acco_li"><a href="#">연수원 소개</a></li>
+              <li class="acco_li"><a href="#">연수원 소개</a></li>
+              <li class="acco_li"><a href="#">연수원 소개</a></li>
+            </ul>
+          </dd>
+          <dt class="acco_title">아코디언 제목</dt>
+          <dd class="acco_sub">
+            <ul>
+              <li class="acco_li"><a href="#">연수원 소개</a></li>
+              <li class="acco_li"><a href="#">연수원 소개</a></li>
+              <li class="acco_li"><a href="#">연수원 소개</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <!-- 아코디언 메뉴 끝 -->
+      <section class="faq">
+        <h3 class="faq_h3">FAQ(자주 묻는 질문)</h3>
+        <p class="faq_p">
+          자주 질문하시는 민원 사항을 정리하여, 원하시는 정보를 해당 페이지에서 빠르게 찾으실 수 있습니다.
+        </p>
+        <dl class="faqList">
+          <dt class="faq_dt open">아파트지구란 무엇이고, 건축규제는 어떻게 되나요?</dt>
+          <dd class="faq_dd">
+            아파트지구는 아파트의 집단적인 건설의 필요성으로 인해 과거 도시계획법에서 지정된 용도지구이며,
+            주택용지, 주구중심, 분구중심, 주택용지 등에 따라 입지할수 있는 용도가 나누어져 있습니다.
+            서울시 도시계획 조례와는 별도의 용적률, 용도제한 내용을 담고 있사오니 아래 첨부파일 6. 건축규제계획을 참고하시기 바랍니다.
+          </dd>
+          <dt class="faq_dt">주민등록증 신규발급 및 재발급</dt>
+          <dd class="faq_dd">
+            ○ 신규주민등록증 발급<br>
+            - 신청시기 : 만 17세가 되는 달의 다음달 1일부터 12개월<br>
+            (예)1995년 6월 21일생의 경우 : 2012.7.1.~2013.6.30.(12개월)<br>
+            - 신청장소 : 주민등록이 되어있는 시·군·구 관내 모든 읍·면·동주민센터<br>
+            - 본인확인 : 행정·공공기관이 발행한 사진이 있는 증명서, 예)청소년증(여가부 발행)<br>
+            ※ 증명서 없을시 17세 이상의 동일 세대원, 배우자, 직계혈족, 형제자매가 동행 확인<br>
+            ※ 사진과 생년월일만 있는 학생증도 본인확인이 가능한 경우 소명자료로 활용 가능<br>
+            - 발급기간 내 미신청시 과태료 부과(최대 5만원)<br>
+            - 구비서류 : 발급신청서, 사진1매<br>
+            <br>
+            ○ 주민등록증 재발급<br>
+            - 신청장소 : 전국 읍·면·동주민센터
+            - 수수료 : 분실 등 일부 재발급에 5,000원 징수<br>
+            (※ 2006.11.1 이전 발급증 반납시 수수료 무료)<br>
+            - 구비서류 : 발급신청서, 사진1매<br>
+            <br>
+            ○ 주민등록증 수령방법<br>
+            - 본인방문 또는 대리수령(신분증 지참, 17세이상 동일 세대원, 배우자, 직계혈족)<br>
+            - 등기우편 수령 시 등기료(3,100원) 납부<br>
+            <br>
+            ○ 주민등록증 사진규격<br>
+            - 크기 : 반명함판(3㎝×4㎝), 여권사진(3.5㎝×4.5㎝)<br>
+            - 6개월 이내에 촬영한 귀와 눈썹이 보이는 천연색 상반신 정면 탈모 사진<br>
+            (귀와 눈썹이 일부 노출된 사진은 인정)<br>
+            <br>
+            ○ 인터넷 주민등록증 재발급<br>
+            - 신청방법 : 정부24(http://www.gov.kr)에서 신청(※분실 사유만 가능)<br>
+            - 수령방법 : 신청시 방문수령기관 선택(※대리수령불가)<br>
+            - 수수료 : 발급수수료 5,000원, (추가) 결재대행수수료 200원<br>
+            <br><br><br>
+            문의 : 2155-8618
+          </dd>
+          <dt class="faq_dt">혼인신고 시 구비서류와 신고 방법을 알려주세요.</dt>
+          <dd class="faq_dd">
+            ○ 내국인간의 혼인 신고의 경우 혼인신고서와 신고인 모두의 신분증명서 필요(한 사람만 방문할 경우에도 배우자의 신분증명서와 도장 지참)<br>
+            ○ 혼인당사자가 외국인으로서 한국방식에 의한 혼인의 경우 혼인신고서, 외국인의 혼인성립요건구비증명서(중국인인 경우 미혼증명서 외교부 공증) 원본과 번역본 및 국적을 증명하는 서면(여권 또는
+            외국인등록증) 사본 각 1부<br>
+            ○ 혼인당사자가 외국인으로 외국방식에 의해 혼인한 경우 혼인신고서, 혼인증서등본 원본과 번역본 및 국적을 증명하는 서면(여권 또는 외국인등록증) 사본 각 1부<br>
+            ○ 민법 제781조제1항의 단서에 따라 자녀의 성·본을 모의 성·본으로 하는 협의를 한 경우에는 협의사실을 증명하는 혼인당사자의 협의서 1부<br>
+            ○ 신분확인 방법<br>
+            - 일반적인 혼인신고는 신고인이 출석한 경우 신고인 모두의 신분증명서, 신고 인은 출석하지 않고 제출인이 출석한 경우 제출인의 신분증명서 및 신고인 모두의 신분증명서 또는 서명공증이나
+            인감증명서(혼인신고서에 반드시 서명 또는 인감도장 날인), 우편제출의 경우 신고인 모두의 서명공증 또는 인감증 명서(혼인신고서에 반드시 서명 또는 인감도장 날인)<br>
+            - 혼인증서등본에 의한 혼인신고의 경우는 신고인이 출석한 경우 신분증명서, 제출인이 출석한 경우 제출인의 신분증명서, 우편제출의 경우 신고인의 신분 증명서 사본<br>
+            ○ 개별적으로 기타 서류가 필요한 경우가 있으므로 자세한 사항은 오-케이민원센터 가족관계등록팀(2155-6294,6295)으로 문의주시기 바랍니다.<br>
+          </dd>
+          <dt class="faq_dt">전입신고는 어떻게 하나요</dt>
+          <dd class="faq_dd">
+            ○ 신청시기 : 신거주지에 전입한 날부터 14일 이내에 신고
+            ○ 신청장소 : 신거주지 관할 읍·면·동주민센터
+            ○ 신고의무자
+            - 거주자 : 세대주(새로운 거주지의 세대주), 세대를 관리하는 자, 본인
+          </dd>
+        </dl>
+        <div class="score">
+          <div class="score_info">이 페이지에서 제공하는 정보에 대하여 만족하십니까?</div>
+          <form>
+            <fieldset class="score_fieldset">
+              <legend>이 페이지에서 제공하는 정보에 대하여 만족하십니까?</legend>
+              <input type="radio" id="satisfy1" name="score">
+              <label for="satisfy1">매우만족</label>
+              <input type="radio" id="satisfy2" name="score">
+              <label for="satisfy2">만족</label>
+              <input type="radio" id="satisfy3" name="score">
+              <label for="satisfy3">보통</label>
+              <input type="radio" id="satisfy4" name="score">
+              <label for="satisfy4">불만족</label>
+              <input type="radio" id="satisfy5" name="score">
+              <label for="satisfy5">매우불만족</label>
+              <input type="submit" value="입력" class="score_submit">
+            </fieldset>
+          </form>
         </div>
       </section>
-
-      <footer>
-          <div class="banner_wrap">
-            <h3 class="skip" class="banenr_h3">배너모음</h3>
-            <div class="bannerList">
-              <ul class="banner">
-                <li><a href="#" target="_blank"><im50g src="../img/footer/footer_1.jpg" alt="제주창조경제혁신센터"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_2.jpg" alt="규제개혁신문고"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_3.jpg" alt="곰감코리아"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_4.jpg" alt="그린IT 생활실천수칙"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_5.jpg" alt="정부민원안내 콜센터 110"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_6.jpg" alt="재외제주도민증 발/급/안/내"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_7.jpg" alt="도로교통수단"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_8.jpg" alt="원산지 표시위반자 공표 농림수산식품부"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_9.jpg" alt="함께 만드는 복지"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_10.jpg" alt="한국인터넷진흥원 KISA"></a></li>
-                <li><a href="#" target="_blank"><img src="../img/footer/footer_11.jpg" alt="도로명주소안내"></a></li>
-              </ul>
-            </div>
-            <div class="footer_btn">
-              <a href="#" class="prevBtn"><img src="../img/footer/footer_left.gif" alt="왼쪽으로 이동"></a>
-              <a href="#" class="nextBtn"><img src="../img/footer/footer_right.gif" alt="오른쪽으로 이동"></a>
-              <a href="#" class="playBtn"><img src="../img/footer/footer_play.gif" alt="재생"></a>
-              <a href="#" class="stopBtn"><img src="../img/footer/footer_stop.gif" alt="멈춤"></a>
-            </div>
-          </div>
-          <div class="fnb">
-            <div class="fnb_wrap">
-              <a href="#">개인정보처리방침</a>
-              <a href="#">저작권정책</a>
-              <a href="#">뷰어프로그램</a>
-            </div>
-          </div>
-          <div class="address_wrap">
-            <div class="address_inner">
-              <div class="footer_logo"><img src="../img/logo/제주도로고2.png" alt="제주도 로고"></div>
-              <div class="footer_txt">
-                <address>
-                  (63122) 제주특별자치도 제주시 문연로 6(연동) 대표전화:064-120 야간.공휴일 당직실 전환<br/>
-                  6, Munyeon-ro, Jeju-si, Jeju-do, 63122, Republic of Korea Tel. 82-64-120
-                </address>
-                <p>Copyright 2019 제주특별자치도. All rights Reserved.</p>
-              </div>
-              <div>
-                <img src="../img/logo/100.png" alt="웹접근성마크" class="wa">
-                <img src="../img/footer/jejusiQR.png" alt="제주도QR">
-              </div>
-            </div>
-          </div>
-      </footer>
     </div>
+    <footer>
+      <div class="banner_wrap">
+        <h3 class="skip" class="banenr_h3">배너모음</h3>
+        <div class="bannerList">
+          <ul class="banner">
+            <li><a href="#" target="_blank">
+                <im50g src="../img/footer/footer_1.jpg" alt="제주창조경제혁신센터">
+              </a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_2.jpg" alt="규제개혁신문고"></a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_3.jpg" alt="곰감코리아"></a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_4.jpg" alt="그린IT 생활실천수칙"></a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_5.jpg" alt="정부민원안내 콜센터 110"></a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_6.jpg" alt="재외제주도민증 발/급/안/내"></a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_7.jpg" alt="도로교통수단"></a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_8.jpg" alt="원산지 표시위반자 공표 농림수산식품부"></a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_9.jpg" alt="함께 만드는 복지"></a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_10.jpg" alt="한국인터넷진흥원 KISA"></a></li>
+            <li><a href="#" target="_blank"><img src="../img/footer/footer_11.jpg" alt="도로명주소안내"></a></li>
+          </ul>
+        </div>
+        <div class="footer_btn">
+          <a href="#" class="prevBtn"><img src="../img/footer/footer_left.gif" alt="왼쪽으로 이동"></a>
+          <a href="#" class="nextBtn"><img src="../img/footer/footer_right.gif" alt="오른쪽으로 이동"></a>
+          <a href="#" class="playBtn"><img src="../img/footer/footer_play.gif" alt="재생"></a>
+          <a href="#" class="stopBtn"><img src="../img/footer/footer_stop.gif" alt="멈춤"></a>
+        </div>
+      </div>
+      <div class="fnb">
+        <div class="fnb_wrap">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">저작권정책</a>
+          <a href="#">뷰어프로그램</a>
+        </div>
+      </div>
+      <div class="address_wrap">
+        <div class="address_inner">
+          <div class="footer_logo"><img src="../img/logo/제주도로고2.png" alt="제주도 로고"></div>
+          <div class="footer_txt">
+            <address>
+              (63122) 제주특별자치도 제주시 문연로 6(연동) 대표전화:064-120 야간.공휴일 당직실 전환<br />
+              6, Munyeon-ro, Jeju-si, Jeju-do, 63122, Republic of Korea Tel. 82-64-120
+            </address>
+            <p>Copyright 2019 제주특별자치도. All rights Reserved.</p>
+          </div>
+          <div>
+            <img src="../img/logo/100.png" alt="웹접근성마크" class="wa">
+            <img src="../img/footer/jejusiQR.png" alt="제주도QR">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
   </div>
 </body>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../js/header.js"></script>
-<script src="../js/main_slide.js"></script>
-<script src="../js/noticeImg.js"></script>
+<script src="../js/accordion.js"></script>
+<script src="../js/subpage.js"></script>
 <script src="../js/footer.js"></script>
+
 </html>

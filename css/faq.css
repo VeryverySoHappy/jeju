@@ -1,0 +1,33 @@
+.faq {
+  /* float: right; */
+  width: 895px;
+  height: 1150px;
+  padding: 50px 0;
+}
+.faq_h3 {font-size: 16px;}
+.faq_p {
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  margin: 20px auto;
+  font-size: 12px;
+}
+.faqList {border-top: 1px solid #c3c3c3;}
+.faq_dt {
+  padding: 10px 0 10px 15px;
+  border-bottom: 1px solid #c3c3c3;
+  font-weight: 700;
+  cursor: pointer;
+  background: url(../img/faq/arrow-sprite.png) no-repeat 5px 16px #f1f1f1;
+  font-size: 12px;
+}
+.open {background-position: 5px -43px;}
+.faq_dt:hover {background-position: 5px -14px;}
+.open:hover {background-position: 5px -67px;}
+.faq_dd {
+  margin: 0;
+  padding: 30px;
+  background-color: #fff;
+  line-height: 2;
+  border-bottom: 1px solid #c3c3c3;
+  font-size: 12px;
+}

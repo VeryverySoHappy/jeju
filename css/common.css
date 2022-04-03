@@ -38,3 +38,30 @@
   clear: both;
   width: 100%;
 }
+.sec1_wrap,
+.sec2_wrap,
+.sec3,
+.sec4_wrap,
+.faq_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.score{
+  width: 895px;
+  margin: 0 auto;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+}
+.score_info {
+  padding: 15px;
+  background: #373c4f;
+  color: #fff;
+}
+.score_fieldset {padding: 20px 0;}
+.score_fieldset > input {margin: 0 5px 0 15px;}
+.score_submit {
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #373c4f;
+  cursor: pointer;
+}

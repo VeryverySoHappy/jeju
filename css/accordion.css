@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.accordion_wrap {
+  width: 220px;
+  /* float: left; */
+}
+.acco_h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+}
+.acco_title {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #373c4f;
+  color: #fff;
+}
+.acco_sub {margin: 0;}
+.acco_sub ul {
+  margin: 0;
+  padding: 0;
+}
+.acco_li {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px dotted #c3c3c3;
+  font-size: 14px;
+}
+.acco_li:hover {background-color: #f4f4f4;}

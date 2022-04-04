@@ -42,20 +42,41 @@
 .sec2_wrap,
 .sec3,
 .sec4_wrap,
-.faq_wrap {
+.faq_wrap,
+.praise_wrap {
   width: 1200px;
   margin: 0 auto;
+  padding: 3rem 0;
 }
+.sub_h2 {
+  font-size: 24px;
+  margin-top: 50px;
+}
+.location {
+  position: relative;
+  margin: 20px 0px;
+  padding: 0;
+  font-size: 14px;
+  width: 895px;
+}
+.location li {display: inline-block;}
+.print {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.print i {font-size: 20px;}
 .score{
   width: 895px;
-  margin: 0 auto;
+  margin: 100px auto;
   border: 1px solid #d9d9d9;
   background-color: #fff;
 }
 .score_info {
   padding: 15px;
-  background: #373c4f;
-  color: #fff;
+  background: #f4f4f4;
+  color: #222;
+  font-weight: bold;
 }
 .score_fieldset {padding: 20px 0;}
 .score_fieldset > input {margin: 0 5px 0 15px;}
@@ -63,5 +84,11 @@
   padding: 5px 20px;
   background-color: #fff;
   border: 1px solid #373c4f;
+  transition: .5s;
   cursor: pointer;
+}
+.score_submit:active,
+.score_submit:hover {
+  background: #373c4f;
+  color: #fff;
 }

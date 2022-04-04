@@ -1,0 +1,94 @@
+.festival_wrap {
+  width: 895px;
+  float: right;
+}
+.eventContainer {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.fes_title {
+  text-align: center;
+  font-weight: 600;
+  color: #373c4f;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.fes_eventList {overflow: hidden;}
+.fes_eventList img {
+  width: 256px;
+  height: 200px;
+}
+.fes_eventList li {
+  float: left;
+  margin-right: 10px;
+}
+.fes_submit {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.fes_submit:hover,
+.fes_submit:active {
+  background-color: #373c4f;
+  color: #fff;
+}
+.fes_menuContainer {border: 1px solid #ddd;}
+.fes_list_wrap {
+  overflow: hidden;
+  padding-left:30px;
+}
+.fes_list_wrap > dt {
+  float: left;
+  width: 255px;
+  height: 350px;
+  margin: 15px 30px 15px 0;
+  font-size: 11px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+}
+.fes_list_wrap dt a.On {
+  border: 1px solid #e64a46;
+  background-color: #e64a46;
+  color: #fff;
+}
+.fes_list .thumb img {
+  width: 256px;
+  height: 200px;
+}
+.fes_list > dt > span {
+  display: block;
+  margin-bottom: 3px;
+}
+.fes_eventList img {
+  display: block;
+  margin-bottom: 5px;
+}
+.delBtn {
+  border: none;
+  background-color: #e64a46;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.fes_info {
+  padding: 15px 0;
+  font-size: 16px;
+}
+.fes_text1 {
+  font-weight: 600;
+  color: #222;
+}
+.fes_text2 {
+  color: #222;
+  margin: 15px 0 10px 0;
+}

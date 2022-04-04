@@ -1,0 +1,71 @@
+.praise{
+  width: 895px;
+  padding-bottom: 700px;
+  float: right;
+}
+.praise_form {
+  border: 1px solid #ccc;
+  width: 895px;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px 0;
+  float: right;
+}
+.praise_form input {padding: 5px 20px;}
+.praise_input {margin-right: 10px;}
+.addBtn {
+  width: 75px;
+  height: 23px;
+  margin-top: 5px;
+}
+.praise_table {
+  border-collapse: collapse;
+  width: 895px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+}
+.praise_caption {
+  width: 1px;
+  height: 1px;
+  line-height: 0;
+  text-indent: -9999em;
+}
+.praise_th {
+  font-size: 13px;
+  padding: 8px;
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.praise_td {
+  padding: 15px;
+  border-bottom: 1px dashed #ccc;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,12 +2,13 @@
 
 .accordion_wrap {
   width: 220px;
-  /* float: left; */
+  float: left;
 }
-.acco_h3 {
+.acco_h2 {
   font-size: 24px;
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 25px;
 }
 .acco_title {
   padding: 20px;
@@ -28,3 +29,6 @@
   font-size: 14px;
 }
 .acco_li:hover {background-color: #f4f4f4;}
+.acco_praise,
+.acc_festival,
+.acco_faq {background-color: #f4f4f4;}

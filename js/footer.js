@@ -1,59 +1,76 @@
-var bannerWidth=120;
-var sid;
+var bannerWidth=150;
+var ft_sid;
 function auto (dis){
-  if(dis=='prev'){
-    $('.banner').prepend($('.banner li:last'));
-    $('.banner').css('left','-'+bannerWidth+'px');
-    $('.banner').animate({
-      left:0
-    },3000)
-  }else{
-    $('.banner').animate({
-      left:'-'+bannerWidth+'px'
-    },3000,function(){
-      $('.banner').append($('.banner li:first'));
-      $('.banner').css('left','0px');
-    })
-  }
+//   if(dis=='prev'){
+//     $('.ft_banner').prepend($('.ft_banner li:last'));
+//     $('.ft_banner').css('left','-'+bannerWidth+'px');
+//     $('.ft_banner').animate({
+//       left:0
+//     },3000)
+//   }else{
+//     $('.ft_banner').animate({
+//       left:'-'+bannerWidth+'px'
+//     },3000,function(){
+//       $('.ft_banner').append($('.ft_banner li:first'));
+//       $('.ft_banner').css('left','0px');
+//     })
+//   }
+// }
+if(dis=='prev'){
+  $('.ft_banner').prepend($('.ft_banner li:last'));
+  $('.ft_banner').css('left','-'+bannerWidth+'px');
+  $('.ft_banner').animate({
+    left:0
+  },3000)
+}else{
+  $('.ft_banner').animate({
+    left:'-'+bannerWidth+'px'
+  },3000,function(){
+    $('.ft_banner').append($('.ft_banner li:first'));
+    $('.ft_banner').css('left','0px');
+  })
+}
 }
 
-function cycleMenu(){
-  $('.prevBtn').on('click',function(e){
+function ft_cycleMenu(){
+  $('.ft_prevBtn').on('click',function(e){
     e.preventDefault();
-    clearInterval(sid);
-    sid=setInterval(auto,3000,'prev')
-    if($('.playBtn').hasClass('on')==true){
-      $('.playBtn').css('display','none');
-      $('.stopBtn').css('display','inline-block')
+    clearInterval(ft_sid);
+    ft_sid=setInterval(auto,3000,'next')
+    if($('.ft_playBtn').hasClass('on')==true){
+      $('.ft_playBtn').css('display','none');
+      $('.ft_stopBtn').css('display','inline-block')
     }
   })
 
-  $('.nextBtn').on('click', function(e){
+  $('.ft_nextBtn').on('click',function(e){
     e.preventDefault();
-    clearInterval(sid);
-    sid=setInterval(auto,3000,'next')
-    if($('.playBtn').hasClass('on')==true){
-      $('.playBtn').css('display','none');
-      $('.stopBtn').css('display','inline-block')
-    }
-  })
-  $('.playBtn').on('click', function(e){
+    clearInterval(ft_sid);
+    ft_sid = setInterval(auto,3000,'prev')
+    if($('.ft_playBtn').hasClass('on')==true){
+      $('.ft_playBtn').css('display','none');
+      $('.ft_stopBtn').css('display','inline-block')
+    }  
+  })  
+  
+  $('.ft_playBtn').on('click',function(e){
     e.preventDefault();
-    clearInterval(sid);
-    sid=setInterval(auto,3000,'next');
+    clearInterval(ft_sid);
+    ft_sid=setInterval(auto,3000,'next');
     $(this).css('display','none');
-    $('.stopBtn').css('display','inline-block')
+    $('.ft_stopBtn').css('display','inline-block');
   })
-  $('.stopBtn').on('click', function(e){
+  
+  $('.ft_stopBtn').on('click',function(e){
     e.preventDefault();
-    clearInterval(sid);
+    clearInterval(ft_sid);
     $(this).css('display','none');
-    $('.playBtn').css('display','inline-block')
-    $('.playBtn').addClass('on')
+    $('.ft_playBtn').css('display','inline-block')
+    $('.ft_playBtn').addClass('on')
   })
 
-  sid=setInterval(auto,1000,'next')
+  ft_sid = setInterval(auto,3000,'next')
 }
 $(document).ready(function(){
-  cycleMenu();
+  ft_cycleMenu();
 })

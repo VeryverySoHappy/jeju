@@ -1,32 +1,49 @@
-.banner_wrap {
+footer { 
+  background-color: #fff;
+  border-top: 2px solid #eee;
+}
+.ft_banner_wrap {
   position: relative;
   width: 1200px;
   height: 70px;
   margin: 0 auto;
 }
-.bannerList{
+.ft_banner_h3 {
+  float: left;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2rem;
+}
+.ft_bannerList{
   position: relative;
-  float: right;
-  width: 1150px;
+  width: 1100px;
   height: 70px;
   overflow: hidden;
 }
-.bannerList .banner {
+.ft_bannerList .ft_banner {
+  width: 1320px;
   position: absolute;
   top: 0;
   left: 0;
-  height: 70px;
-  margin: 0;
 }
-.bannerList .banner li {
+.ft_bannerList .ft_banner li {
   float: left;
-  padding: 15px 10px 15px 0;
+  padding: 6px 15px 6px 15px;
 }
-.footer_btn {
+.ft_btn {
   position: absolute;
   bottom: 10px;
+  left: 0;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
 }
-.playBtn {display: none;}
+.ft_btn a {
+  padding: 0 10px;
+}
+.ft_playBtn{display: none;}
 .fnb {background-color:#373C4F;}
 .fnb_wrap {
   width: 1200px;

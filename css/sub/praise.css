@@ -1,6 +1,5 @@
 .praise{
   width: 895px;
-  padding-bottom: 700px;
   float: right;
 }
 .praise_form {
@@ -12,11 +11,13 @@
   float: right;
 }
 .praise_form input {padding: 5px 20px;}
-.praise_input {margin-right: 10px;}
+.praise_input {
+  margin-right: 10px;
+}
 .addBtn {
   width: 75px;
   height: 23px;
-  margin-top: 5px;
+  vertical-align: middle;
 }
 .praise_table {
   border-collapse: collapse;
@@ -33,24 +34,15 @@
 .praise_th {
   font-size: 13px;
   padding: 8px;
-  background-color: #eee;
+  background-color: #f4f4f4;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-.praise_td {
-  padding: 15px;
+tbody td {
+  padding: 8px;
   border-bottom: 1px dashed #ccc;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
 
 
 

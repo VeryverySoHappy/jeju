@@ -16,8 +16,8 @@ function infoAdd(){
     return;
   }
 
-  var userPhone=$.trim($('#mem_txt').val());
-  if(userText=""){
+  var userText = $.trim($('#mem_txt').val());
+  if(userText==""){
     alert('내용을 입력하세요');
     $('#mem_txt').focus();
     return;

@@ -1,7 +1,7 @@
 .faq {
   float: right;
   width: 895px;
-  padding-bottom: 400px;
+  /* padding-bottom: 350px; */
 }
 .faq_p {
   border: 1px solid #d9d9d9;
@@ -15,12 +15,9 @@
   border-bottom: 1px solid #c3c3c3;
   font-weight: 700;
   cursor: pointer;
-  background: url(../img/sub/arrow-sprite.png) no-repeat 5px 16px #f1f1f1;
+  background: #f4f4f4;
   font-size: 12px;
 }
-.open {background-position: 5px -43px;}
-.faq_dt:hover {background-position: 5px -14px;}
-.open:hover {background-position: 5px -67px;}
 .faq_dd {
   margin: 0;
   padding: 30px;
